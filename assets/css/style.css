@@ -7,7 +7,7 @@
   --color-bg:            #07070f;
   --color-text:          #c8c8d8;
   --color-accent:        #00ff88;
-  --color-accent2:       #ff44aa;
+  --color-accent2:       #ff77cc;
   --color-accent3:       #44ddff;
   --color-accent-light:  rgba(0,255,136,0.07);
   --color-muted:         #8888aa;
@@ -20,7 +20,7 @@
   --font-mono:           'JetBrains Mono', 'Space Mono', 'Courier New', monospace;
   --sidebar-width:       280px;
   --glow-green: 0 0 6px rgba(0,255,136,0.55), 0 0 18px rgba(0,255,136,0.18);
-  --glow-pink:  0 0 6px rgba(255,68,170,0.55), 0 0 18px rgba(255,68,170,0.18);
+  --glow-pink:  0 0 6px rgba(255,119,204,0.55), 0 0 18px rgba(255,119,204,0.18);
   --glow-blue:  0 0 6px rgba(68,221,255,0.55), 0 0 18px rgba(68,221,255,0.18);
 }
 
@@ -128,7 +128,7 @@ body {
   text-align: center;
   margin-top: 0.3rem;
   line-height: 1.6;
-  text-shadow: 0 0 5px rgba(255,68,170,0.45);
+  text-shadow: 0 0 5px rgba(255,119,204,0.45);
   letter-spacing: 0.02em;
 }
 .sidebar-institution {
@@ -229,6 +229,7 @@ h1.page-title span {
   margin-bottom: 2rem;
   letter-spacing: 0.05em;
   text-shadow: 0 0 6px rgba(68,221,255,0.3);
+  text-align: center;
 }
 h2.section-title {
   font-family: var(--font-display);
@@ -314,7 +315,7 @@ em { color: #aaaacc; font-style: italic; }
   color: var(--color-accent2);
   margin-bottom: 0.3rem;
   text-transform: uppercase; letter-spacing: 0.09em;
-  text-shadow: 0 0 4px rgba(255,68,170,0.35);
+  text-shadow: 0 0 4px rgba(255,119,204,0.35);
 }
 .card p { font-size: 0.82rem; margin-bottom: 0; }
 
@@ -398,7 +399,7 @@ details[open] summary::before { content: '▼ '; }
   color: var(--color-accent2);
   text-transform: uppercase; letter-spacing: 0.1em;
   margin-bottom: 0.28rem;
-  text-shadow: 0 0 4px rgba(255,68,170,0.28);
+  text-shadow: 0 0 4px rgba(255,119,204,0.28);
 }
 
 /* ── VIDEO EMBED ── */
@@ -450,7 +451,7 @@ details[open] summary::before { content: '▼ '; }
 @media (max-width: 768px) {
   body { flex-direction: column; }
   .sidebar {
-    width: 100%; height: auto; position: relative;
+    width: 100%; height: auto; position: sticky; top: 0;
     padding: 1.2rem 1rem;
     flex-direction: row; flex-wrap: wrap;
     align-items: center; justify-content: space-between;
