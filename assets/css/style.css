@@ -452,6 +452,7 @@ details[open] summary::before { content: '▼ '; }
   body { flex-direction: column; }
   .sidebar {
     width: 100%; height: auto; position: sticky; top: 0;
+    overflow: visible;
     padding: 1.2rem 1rem;
     flex-direction: row; flex-wrap: wrap;
     align-items: center; justify-content: space-between;
@@ -462,7 +463,21 @@ details[open] summary::before { content: '▼ '; }
   .sidebar-avatar,
   .sidebar-avatar-placeholder { width: 48px; height: 48px; font-size: 1.1rem; margin: 0; }
   .sidebar-name { font-size: 1.1rem; text-align: left; }
-  .sidebar-title, .sidebar-institution { display: none; }
+  .sidebar-title {
+    display: block;
+    width: 100%;
+    font-size: 0.58rem;
+    text-align: left;
+    margin-top: 0.25rem;
+    line-height: 1.5;
+  }
+  .sidebar-institution {
+    display: block;
+    width: 100%;
+    font-size: 0.58rem;
+    text-align: left;
+    margin-top: 0.1rem;
+  }
   .sidebar-nav { width: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.7rem; }
   .sidebar-nav a { font-size: 0.72rem; padding: 0.28rem 0.45rem; }
   .sidebar-divider { width: 100%; margin: 0.7rem 0; }
