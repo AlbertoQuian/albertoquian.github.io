@@ -266,6 +266,7 @@ p:last-child { margin-bottom: 0; }
 a { color: var(--color-accent3); text-decoration: none; transition: all 0.18s; }
 a:hover { color: var(--color-accent); text-shadow: 0 0 6px rgba(0,255,136,0.45); }
 strong { color: var(--color-text); }
+a strong, a em { color: inherit; }
 em { color: #aaaacc; font-style: italic; }
 
 /* ── INTRO BLOCK ── */
