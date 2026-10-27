@@ -9,12 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
 
-  <aside class="sidebar">
-    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4" alt="Alberto Quian" />
+  <aside class="sidebar" id="sidebar">
+    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4&s=256" alt="Alberto Quian" />
     <div class="sidebar-name">Alberto Quian</div>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">☰</button>
     <div class="sidebar-title">Doctor en Investigación<br>en Medios de Comunicación<br>Profesor de Periodismo<br>Cultura y ética hacker</div>
     <div class="sidebar-institution">Universidade de <br>Santiago de Compostela<br></div>
     <hr class="sidebar-divider" />
@@ -157,6 +159,10 @@
             <p>
               Análisis del impacto de la cuarta revolución industrial en el periodismo y los medios de comunicación: inteligencia artificial, automatización, desinformación y nuevos modelos de negocio mediático.
             </p>
+            <p>
+              Reseña: Fernández Lombao, T. (2025). <em>Uru. Revista de Comunicación y Cultura</em>, 11, 193–196.
+              <a href="https://doi.org/10.32719/26312514.2025.11.12" target="_blank" rel="noopener">DOI: 10.32719/26312514.2025.11.12</a>
+            </p>
             <div class="tags">
               <span class="tag">IA periodismo</span>
               <span class="tag">Innovación</span>
@@ -168,10 +174,67 @@
       </div>
     </section>
 
+    <!-- Libro coeditado en prensa -->
+    <section class="page-section">
+      <div class="card-list">
+        <div class="card">
+          <div class="card-meta">Palgrave Macmillan · Springer Nature · en prensa · ISBN 978-3-032-25811-3</div>
+          <h3 class="item-title"><a href="https://link.springer.com/book/9783032258113" target="_blank" rel="noopener">Reimagining the Public Sphere: Hybrid Journalism, New Technologies and Alternative Social Networks Influencing Truth and Public Perception</a></h3>
+          <p>García Orosa, B., Rivas de Roca, R., <strong>Quian, A.</strong> &amp; Pérez Seijo, S. (eds.). Cham: Palgrave Macmillan.</p>
+          <p>Exploración de cómo las tecnologías emergentes están transformando la verdad, la participación democrática y la esfera pública, en 17 capítulos de 35 autores. Como coeditor firmo el prólogo y la introducción, y escribo dos capítulos: «Decentralisation, Interoperability, FOSS, and Digital Sovereignty: Weaving New Connections in the Digital Public Sphere» y, con Rodríguez-Vázquez, el capítulo final «A Collective Responsibility: Reimagining the Public Sphere Together».</p>
+          <div class="tags">
+            <span class="tag">Esfera pública</span>
+            <span class="tag">Fediverso</span>
+            <span class="tag">Soberanía digital</span>
+            <span class="tag">Palgrave</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Capítulos de libro -->
     <section class="page-section">
       <h2 class="section-title">Capítulos de libro</h2>
       <ul class="pub-list">
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">Inteligencia Artificial de código abierto y libre: transparencia, soberanía digital y democratización tecnológica</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; Espiritusanto, O.
+            En Prieto-Arosa, J.M., Maroto-González, I. &amp; Túñez-López, J.M. (eds.), <em>La Inteligencia Artificial en el espejo. Guía social, ética y cultural para entender el presente y el futuro digital</em>, pp. 323–351. Editorial Aula Magna – McGraw-Hill, 2026. ISBN 979-13-88377-03-7.
+            <a href="https://editorialaulamagna.com/libro/La-Inteligencia-Artificial-espejo" target="_blank" rel="noopener">→ Ver en la editorial</a>
+          </span>
+          <span style="font-size:0.82rem;color:var(--color-muted);">— Obra resultado de los proyectos OpenPSM (PID2024-160337OB-I00), VALUEbot (PDC2023-145885-I00) y XornalIA (PDC2025-166024-I00).</span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">IA abierta</span><span class="tag">Soberanía digital</span><span class="tag">Software libre</span><span class="tag">Ética hacker</span></div>
+        </li>
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">GallaecIA Media HackLab: un laboratorio abierto de innovación pedagógica en periodismo e inteligencia artificial</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong>
+            En <em>La inteligencia artificial y su irrupción en los estudios de periodismo, comunicación y publicidad</em>, pp. 45–61. Madrid: Dykinson, 2026. ISBN 979-13-7047-456-0.
+            <a href="https://hdl.handle.net/10347/48724" target="_blank" rel="noopener">→ Minerva</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">GallaecIA</span><span class="tag">Innovación docente</span><span class="tag">IA</span></div>
+        </li>
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">Decentralisation, Interoperability, FOSS, and Digital Sovereignty: Weaving New Connections in the Digital Public Sphere</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong>
+            En <em>Reimagining the Public Sphere</em>. Cham: Palgrave Macmillan, 2026 (en prensa). ISBN 978-3-032-25811-3.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Fediverso</span><span class="tag">FOSS</span><span class="tag">Soberanía digital</span></div>
+        </li>
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">A Collective Responsibility: Reimagining the Public Sphere Together</span><br />
+          <span class="pub-venue">
+            Rodríguez-Vázquez, A.I. &amp; <strong>Quian, A.</strong>
+            En <em>Reimagining the Public Sphere</em>. Cham: Palgrave Macmillan, 2026 (en prensa). ISBN 978-3-032-25811-3.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Esfera pública</span></div>
+        </li>
         <li>
           <span class="pub-year">2025</span>
           <span class="pub-title">Fediverso y medios públicos: el reto de estar en Mastodon</span><br />
@@ -244,6 +307,15 @@
             <a href="https://doi.org/10.5944/m.periodismo.verificacion.2021.07" target="_blank" rel="noopener">DOI: 10.5944/m.periodismo.verificacion.2021.07</a>
             &middot; <a href="https://hdl.handle.net/20.500.14468/20815" target="_blank" rel="noopener">→ e-Spacio UNED</a>
           </span>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/HBpqlCyoNNE"
+              title="Wikipedia como campo de batalla ideológico e intelectual — módulo del MOOC «Periodismo y fake news», UNED"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
         </li>
       </ul>
     </section>
@@ -252,6 +324,16 @@
     <section class="page-section">
       <h2 class="section-title">Artículos en revistas científicas (selección)</h2>
       <ul class="pub-list">
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">¿Un «efecto Musk» en Funkwhale? Dinámicas de crecimiento en una plataforma de streaming de audio del Fediverso / A ‘Musk effect’ on Funkwhale? Growth Dynamics in a Fediverse Audio Streaming Platform</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; Soengas-Pérez, X.
+            <em>Revista Prisma Social</em>, 54, 425–449, 2026. <a href="https://doi.org/10.65598/rps.6159" target="_blank" rel="noopener">DOI: 10.65598/rps.6159</a>
+          </span>
+          <span style="font-size:0.82rem;color:var(--color-muted);">— Proyecto PID2024-156034OB-C22 (MICIU/AEI + FEDER/UE). Publicado en abierto; estudio pionero sobre Funkwhale, servicio federado de audio del Fediverso.</span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Fediverso</span><span class="tag">Funkwhale</span><span class="tag">Efecto Musk</span><span class="tag">Redes descentralizadas</span></div>
+        </li>
 
         <li>
           <span class="pub-year">2026</span>
@@ -259,7 +341,7 @@
           <span class="pub-venue">
             García Fernández, R.J. &amp; <strong>Quian, A.</strong>
             <em>Estudios sobre el Mensaje Periodístico</em>, 32(2), 453–475, 2026. <a href="https://doi.org/10.5209/esmp.103702" target="_blank" rel="noopener">DOI: 10.5209/esmp.103702</a><br />
-            <span style="font-size:0.82rem; color:var(--color-muted);">— Trabajo derivado de un TFG dirigido por A. Quian. Proyecto PID2024-156034OB-C22 (MICIU/AEI + FEDER/UE). SJR Q1.</span>
+            <span style="font-size:0.82rem; color:var(--color-muted);">— Trabajo derivado de un TFG dirigido por A. Quian. Proyecto PID2024-156034OB-C22 (MICIU/AEI + FEDER/UE). SJR 2025: Q1 en Cultural Studies y Q2 en Communication.</span>
           </span>
           <div class="tags" style="margin-top:0.5rem;"><span class="tag">IA</span><span class="tag">Periodismo deportivo</span><span class="tag">Análisis estadístico</span><span class="tag">Python</span><span class="tag">Ciencia de datos</span></div>
         </li>
@@ -322,6 +404,17 @@
         </li>
 
         <li>
+          <span class="pub-year">2021</span>
+          <span class="pub-title">Observación participante en una organización de filtraciones periodísticas: el caso WikiLeaks</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong>
+            <em>Empiria: Revista de Metodología de Ciencias Sociales</em>, 52, 199–231, 2021. <a href="https://doi.org/10.5944/empiria.52.2021.31370" target="_blank" rel="noopener">DOI: 10.5944/empiria.52.2021.31370</a>
+            <span style="font-size:0.82rem;color:var(--color-muted);">Acceso abierto CC BY-NC-SA 4.0</span>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">WikiLeaks</span><span class="tag">Metodología</span><span class="tag">Observación participante</span></div>
+        </li>
+
+        <li>
           <span class="pub-year">2018</span>
           <span class="pub-title">Estrategias y razones del impacto de WikiLeaks en la opinión pública mundial</span><br />
           <span class="pub-venue">
@@ -330,6 +423,17 @@
             <a href="https://doi.org/10.5477/cis/reis.162.91" target="_blank" rel="noopener">DOI: 10.5477/cis/reis.162.91</a>
           </span>
           <div class="tags" style="margin-top:0.5rem;"><span class="tag">WikiLeaks</span><span class="tag">Opinión pública</span><span class="tag">Impacto mediático</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2017</span>
+          <span class="pub-title">Wikipedia y sus relatos colaborativos como indicador de interés ciudadano</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; Elías, C.
+            <em>Prisma Social</em>, 18, 85–123, 2017.
+            <a href="https://revistaprismasocial.es/ps" target="_blank" rel="noopener">→ Revista Prisma Social</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Wikipedia</span><span class="tag">WikiLeaks</span><span class="tag">Conocimiento colaborativo</span></div>
         </li>
 
         <li>
@@ -343,28 +447,6 @@
           <div class="tags" style="margin-top:0.5rem;"><span class="tag">Periodismo digital</span><span class="tag">Sociedad red</span></div>
         </li>
 
-        <li>
-          <span class="pub-year">2017</span>
-          <span class="pub-title">Wikipedia y sus relatos colaborativos como indicador de interés ciudadano</span><br />
-          <span class="pub-venue">
-            <strong>Quian, A.</strong> &amp; Elías, C.
-            <em>Prisma Social</em>, 18, 85–123, 2017.
-            <a href="https://revistaprismasocial.es/article/view/1426" target="_blank" rel="noopener">→ Leer en Prisma Social</a>
-          </span>
-          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Wikipedia</span><span class="tag">WikiLeaks</span><span class="tag">Conocimiento colaborativo</span></div>
-        </li>
-
-        <li>
-          <span class="pub-year">2021</span>
-          <span class="pub-title">Observación participante en una organización de filtraciones periodísticas: el caso WikiLeaks</span><br />
-          <span class="pub-venue">
-            <strong>Quian, A.</strong>
-            <em>Empiria: Revista de Metodología de Ciencias Sociales</em>, 52, 199–231, 2021. <a href="https://doi.org/10.5944/empiria.52.2021.31370" target="_blank" rel="noopener">DOI: 10.5944/empiria.52.2021.31370</a>
-            <span style="font-size:0.82rem;color:var(--color-muted);">Acceso abierto CC BY-NC-SA 4.0</span>
-          </span>
-          <div class="tags" style="margin-top:0.5rem;"><span class="tag">WikiLeaks</span><span class="tag">Metodología</span><span class="tag">Observación participante</span></div>
-        </li>
-
       </ul>
       <p style="margin-top:1rem; font-size:0.85rem;">
         → Lista completa en
@@ -374,16 +456,161 @@
       </p>
     </section>
 
+    <!-- Comunicaciones en congresos -->
+    <section class="page-section" id="congresos">
+      <h2 class="section-title">Comunicaciones en congresos</h2>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">Recuperando espacios de conversación digital: de la desinformación a la soberanía informativa</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; D’Antonio Maceiras, S. Ponencia invitada (keynote), EmpoderaLIVE 2026 (Fundación Cibervoluntarios), Málaga, 06/10/2026. <a href="divulgacion.html#empoderalive" target="_blank" rel="noopener">→ Ver con vídeos</a> · <a href="https://empodera.org/live/es/ponentes/alberto-quian" target="_blank" rel="noopener">Ficha oficial</a>
+          </span>
+          <span style="font-size:0.82rem;color:var(--color-muted);">— Participación vinculada al proyecto PID2024-156034OB-C22 (MICIU/AEI + FEDER/UE).</span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Desinformación</span><span class="tag">Soberanía informativa</span><span class="tag">Cibervoluntarios</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">Conflictos internacionales, prensa y participación ciudadana en redes sociales: el debate sobre Groenlandia en X</span><br />
+          <span class="pub-venue">
+            Moure-García, E., <strong>Quian, A.</strong> &amp; García-Orosa, B. Comunicación oral en <em>Periodismo y sociedad conectada: nuevas narrativas, nuevas responsabilidades</em> (Sociedad Española de Periodística, SEP), Gandía, 10/06/2026. <a href="https://sepgandia2026.webs.upv.es/wp-content/uploads/Libro_resumenes_SEP_2026.pdf" target="_blank" rel="noopener">→ Libro de resúmenes</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Redes sociales</span><span class="tag">Groenlandia</span><span class="tag">X</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">Pluralismo polarizado en acción: análisis cuantitativo computacional de titulares durante el proceso postelectoral para la investidura de Pedro Sánchez (2023)</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; Sixto-García, J. Comunicación oral en el <em>X Congreso Internacional AE-IC: Comunicar en la incertidumbre</em> (Universidade de Vigo, Pontevedra), 19/05/2026. <a href="https://aeicpontevedra2026.org/openconf/modules/request.php?module=oc_program&amp;action=summary.php&amp;id=176" target="_blank" rel="noopener">→ Resumen en el programa</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Pluralismo</span><span class="tag">Análisis computacional</span><span class="tag">AE-IC</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">GallaecIA Media Hacklab: un laboratorio docente, experimental y abierto de periodismo e inteligencia artificial</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> Comunicación oral en <em>esLibre 2026: Congreso de Cultura y Tecnologías Libres</em> (MeLiSA), 17/04/2026. <a href="https://propuestas.eslib.re/2026/charlas/gallaecia-media-hacklab-un-laboratorio-docente-experimental-y-abierto-de-periodismo-e-inteligencia-artificial" target="_blank" rel="noopener">→ Propuesta</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Software libre</span><span class="tag">Innovación docente</span><span class="tag">GallaecIA</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2025</span>
+          <span class="pub-title">Mastodon como alternativa a X para la conversación científica: un método para explorar y analizar el movimiento #ScienceMastodon</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; Sixto-García, J. Comunicación oral en el <em>Congreso de Divulgación, Transferencia e Impacto Social de la Ciencia (CoDi)</em>, Universidade de Vigo, 12/03/2025.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Mastodon</span><span class="tag">Divulgación científica</span><span class="tag">Fediverso</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2025</span>
+          <span class="pub-title">Desertos informativos e intelixencia artificial: desafíos e oportunidades no xornalismo local</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> Comunicación oral en el <em>Cumio Ibérico de Xornalismo Local</em> (Grupo Novos Medios y MediaTrust.Lab), Facultade de Ciencias da Comunicación, Santiago de Compostela, 20/01/2025. <a href="https://novosmedios.gal/es/2025/01/09/cumio-iberico-de-xornalismo-local-os-dias-20-e-21-de-xaneiro-en-ciencias-da-comunicacion/" target="_blank" rel="noopener">→ Programa</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Xornalismo local</span><span class="tag">IA</span><span class="tag">Desiertos informativos</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2024</span>
+          <span class="pub-title">IA For Good: herramientas para apoyar la democracia</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> (moderador de la mesa). <em>Congreso Internacional de la Radio: Presente y futuro del audio</em> (UAB), Barcelona, 15/11/2024. <a href="divulgacion.html" target="_blank" rel="noopener">→ Ver en Divulgación</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">IA</span><span class="tag">Radio pública</span><span class="tag">Democracia</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2024</span>
+          <span class="pub-title">Navegando el Fediverso: participación de medios periodísticos en Mastodon</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong>, Soengas-Pérez, X. &amp; López-García, X. Comunicación oral en el <em>XVI Congreso Internacional de Ciberperiodismo y Comunicación Digital</em> (UPV/EHU), Bilbao, 11/11/2024.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Fediverso</span><span class="tag">Mastodon</span><span class="tag">Medios digitales</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2024</span>
+          <span class="pub-title">Chatbots conversacionales para la promoción de contenidos</span><br />
+          <span class="pub-venue">
+            Maroto-González, I., Rodríguez-Martelo, T. &amp; <strong>Quian, A.</strong> Comunicación oral en el <em>XVI Congreso Internacional de Ciberperiodismo y Comunicación Digital</em> (UPV/EHU), Bilbao, 11/11/2024.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Chatbots</span><span class="tag">IA</span><span class="tag">Contenidos</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2024</span>
+          <span class="pub-title">Nuevos medios de comunicación nativos digitales: de la explosión a la especialización y la creación de comunidades. El caso de GCiencia</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong>, López-García, X. &amp; Soengas-Pérez, X. Comunicación oral en el <em>IX Congreso Internacional de la AE-IC: Comunicación e Innovación Sostenible</em> (Murcia), 28/05/2024. <a href="https://hdl.handle.net/10347/38925" target="_blank" rel="noopener">→ Repositorio USC</a> · <a href="https://dialnet.unirioja.es/servlet/libro?codigo=987447" target="_blank" rel="noopener">Libro de comunicaciones</a>
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Medios nativos digitales</span><span class="tag">GCiencia</span><span class="tag">AE-IC</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2023</span>
+          <span class="pub-title">FunkWhale: an exploratory and descriptive study on the Fediverse audio streaming service</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> &amp; Soengas-Pérez, X. Comunicación oral en la <em>7th ECREA Radio and Sound Section Conference</em> (European Communication Research and Education Association), Barcelona, 06/09/2023.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Fediverso</span><span class="tag">Funkwhale</span><span class="tag">Audio</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2021</span>
+          <span class="pub-title">Fact-checking automatizado: estado de la cuestión y percepción entre estudiantes de Periodismo de Investigación</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> Comunicación oral en el <em>I Congreso Innovacom: Nuevos y viejos desafíos del periodismo</em> (Universitat Autònoma de Barcelona), 05/10/2021.
+          </span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Fact-checking</span><span class="tag">Automatización</span><span class="tag">Docencia</span></div>
+        </li>
+
+        <li>
+          <span class="pub-year">2020</span>
+          <span class="pub-title">WikiLeaks en la prensa: análisis de contenido del 'Cablegate'</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong> Comunicación oral en el <em>I Congreso Internacional NODOS del Conocimiento 2020: Universidad, innovación e investigación ante el horizonte 2030</em> (Universidad de Sevilla, Universidad de Zaragoza y Editorial Egregius), 10–11/12/2020. Publicada en las actas (Egregius, 2021, pp. 740–741; ISBN 978-84-18167-39-3). <a href="https://nodos.org/ediciones/2020/ponencia/wikileaks-en-la-prensa-analisis-de-contenido-del-cablegate/" target="_blank" rel="noopener">→ Ficha en nodos.org</a> · <a href="https://hdl.handle.net/11441/127022" target="_blank" rel="noopener">Repositorio de la Universidad de Sevilla</a>
+          </span>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/NWG8qWWfwgA"
+              title="WikiLeaks en la prensa: análisis de contenido del Cablegate — I Congreso Internacional NODOS del Conocimiento 2020"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">WikiLeaks</span><span class="tag">Cablegate</span><span class="tag">Análisis de contenido</span></div>
+        </li>
+      </ul>
+      <p style="margin-top:0.8rem;font-size:0.82rem;">Otras intervenciones en mesas, cursos y jornadas (por invitación) en <a href="divulgacion.html">Divulgación</a>.</p>
+    </section>
+
     <!-- Informes científico-técnicos -->
     <section class="page-section">
       <h2 class="section-title">Informes científico-técnicos</h2>
       <ul class="pub-list">
         <li>
-          <span class="pub-year">2025</span>
+          <span class="pub-year">2026</span>
+          <span class="pub-title">Assessment of VLOP and VLOSE Signatory Reports for the Strengthened Code of Practice on Disinformation. Report No. 4</span><br />
+          <span class="pub-venue">
+            Moreno Castro, C., Paisana, M., Serra-Perales, A., Azurmendi, A., Vázquez Herrero, J. et al. (incl. <strong>Quian, A.</strong>)
+            IBERIFIER – Iberian Digital Media &amp; Fact-Checking. Universidad de Navarra, 2026.
+            <a href="https://doi.org/10.5281/zenodo.20846772" target="_blank" rel="noopener">DOI: 10.5281/zenodo.20846772</a>
+          </span>
+          <span style="font-size:0.82rem;color:var(--color-muted);"> — Proyecto europeo IBERIFIER Plus (ref. 101158511). Cuarto informe del equipo WP5, sobre los informes presentados por las plataformas el 31 de marzo de 2026.</span>
+          <div class="tags" style="margin-top:0.5rem;"><span class="tag">Desinformación</span><span class="tag">IBERIFIER</span><span class="tag">UE</span><span class="tag">Plataformas digitales</span></div>
+        </li>
+        <li>
+          <span class="pub-year">2024</span>
           <span class="pub-title">Assessment of VLOPSEs (Very Large Online Platforms) and VLOSEs (Very Large Online Search Engines). Signatory Reports for the Strengthened Code of Practice on Disinformation (Report 1)</span><br />
           <span class="pub-venue">
             Moreno-Castro, C., Paisana, M., Falco-Moreno, N., Herrero, J.V., Azurmendi, A., <strong>Quian, A.</strong> et al.
-            IBERIFIER – Iberian Digital Media &amp; Fact-Checking. Universidad de Navarra, 2025.
+            IBERIFIER – Iberian Digital Media &amp; Fact-Checking. Universidad de Navarra, 2024.
             <a href="https://doi.org/10.5281/zenodo.15309349" target="_blank" rel="noopener">DOI: 10.5281/zenodo.15309349</a>
             <span style="font-size:0.82rem;color:var(--color-muted);"> — Proyecto europeo IBERIFIER Plus (ref. 101158511). Co-responsable de la evaluación de Google LLC y YouTube.</span>
           </span>
@@ -422,6 +649,17 @@
             <em>Revista Grial</em>, nº 248 – Comunicación e novas tecnoloxías. Editorial Galaxia. Decembro 2025. Código: 19283.<br />
             — Presentado en los <em>Foros Grial</em> (75 aniversario Editorial Galaxia), Fundación Penzol, Vigo, octubre 2025.<br />
             <a href="https://editorialgalaxia.gal/produto/grial-248-comunicacion-e-novas-tecnoloxias/" target="_blank" rel="noopener">→ Ver en Editorial Galaxia</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="pub-year">2024</span>
+          <span class="pub-title">Desinformación y polarización en la era digital: un desafío intergeneracional y tecnológico</span><br />
+          <span class="pub-venue">
+            <strong>Quian, A.</strong>
+            En <em>Del fax al meme: el dilema generacional</em> (Tendencias 2025), BEST, pp. 87–90, 11/12/2024.<br />
+            — Contribución por invitación de la agencia BEST, en un análisis colaborativo de 26 especialistas.<br />
+            <a href="https://agencia.best/tendencias-transversales-2025/" target="_blank" rel="noopener">→ Ver en BEST</a>
           </span>
         </li>
 

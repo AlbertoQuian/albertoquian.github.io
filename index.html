@@ -27,13 +27,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
 
   <!-- ── Sidebar ── -->
-  <aside class="sidebar">
-    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4" alt="Alberto Quian" />
+  <aside class="sidebar" id="sidebar">
+    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4&s=256" alt="Alberto Quian" />
     <div class="sidebar-name">Alberto Quian</div>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">☰</button>
     <div class="sidebar-title">Doctor en Investigación<br>en Medios de Comunicación<br>Profesor de Periodismo<br>Cultura y ética hacker</div>
     <div class="sidebar-institution">Universidade de <br>Santiago de Compostela<br></div>
     <hr class="sidebar-divider" />
@@ -62,7 +64,11 @@
   <main class="main">
 
     <section class="page-section">
+      <div class="mobile-profile">
+        <img class="mobile-profile-photo" src="https://avatars.githubusercontent.com/u/128751500?v=4&s=288" alt="Alberto Quian" width="144" height="144" />
+      </div>
       <h1 class="page-title" style="text-align:center;"><span>Alberto Quian</span></h1>
+      <p class="mobile-only">Doctor en Investigación<br>en Medios de Comunicación<br>Cultura y ética hacker</p>
       <p class="page-subtitle">Profesor de Periodismo<br>Departamento de Ciencias de la Comunicación<br>Grupo de investigación <a href="https://novosmedios.gal" target="_blank" rel="noopener" style="color:inherit;">Novos Medios</a><br>Universidade de Santiago de Compostela</p>
 
       <div class="intro-block">
@@ -99,9 +105,11 @@
           En docencia, coordino <a href="https://ia.xornalismo.gal" target="_blank" rel="noopener"><strong>GallaecIA Media HackLab</strong></a>,
           laboratorio educativo donde el alumnado experimenta con IA generativa aplicada al periodismo.
           Soy miembro de <a href="https://rgcud.gal/artigo9tech" target="_blank" rel="noopener"><strong>Artigo9Tech</strong></a>
-          (RGCUD), colaboro como voluntario con <a href="https://galicia.isf.es" target="_blank" rel="noopener">Enxeñería Sen Fronteiras Galicia</a>
-          y apoyo al colectivo hacker <a href="https://hispagatos.org" target="_blank" rel="noopener">Hispagatos</a>.
-          Creo en la ciencia abierta, el conocimiento libre y la transparencia radical.
+          (RGCUD), colaboro como voluntario con <a href="https://galicia.isf.es" target="_blank" rel="noopener">Enxeñería Sen Fronteiras Galicia</a>,
+          apoyo al colectivo hacker <a href="https://hispagatos.org" target="_blank" rel="noopener">Hispagatos</a>,
+          colaboro con la <a href="https://cibervoluntarios.org" target="_blank" rel="noopener">Fundación Cibervoluntarios</a>
+          y suscribo la Declaración Colectiva de la <a href="https://empodera.org" target="_blank" rel="noopener">Alianza por la Soberanía Digital Ciudadana</a>.
+          Creo en la ciencia abierta, el conocimiento libre, la transparencia radical y el bien común.
         </p>
       </div>
     </section>
@@ -123,14 +131,15 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">Académica · 2016 – 2023</div>
+          <div class="card-meta">Académica · 2017 – 2023</div>
           <h3 class="item-title">Docente e investigador — UC3M · UOC</h3>
           <p>
-            Docencia en Periodismo Científico e investigación en el grupo
+            Docencia en Periodismo Científico (2017–2023) e investigación en el grupo
             <em>Analytics, Media and Public Engagement: UC3M MediaLab</em>,
             <a href="https://www.uc3m.es" target="_blank" rel="noopener">Universidad Carlos III de Madrid</a>.
             Docente también en el Máster en Periodismo y Comunicación Digital: Datos y Nuevas Narrativas de la
-            <a href="https://www.uoc.edu" target="_blank" rel="noopener">Universitat Oberta de Catalunya (UOC)</a>.
+            <a href="https://www.uoc.edu" target="_blank" rel="noopener">Universitat Oberta de Catalunya (UOC)</a> (2018–2023).
+            Miembro de la Junta de la Facultad de Humanidades, Comunicación y Documentación de la UC3M (2022–2023).
           </p>
         </div>
 
@@ -140,7 +149,7 @@
           <p>
             Director técnico y coordinador digital del portal galego de divulgación científica
             <strong><a href="https://www.gciencia.com" target="_blank" rel="noopener">GCiencia</a></strong>
-            (2013–2016), consolidado con dos ayudas FECYT (2014 y 2015).
+            (2013–2016), consolidado con dos ayudas FECYT (2014 y 2015). Entre sus iniciativas, los Premios Galicia Spin-off y el Premio Universitario de Comunicación Científica «Contar a Ciencia», convocado con la Real Academia Galega de Ciencias.
           </p>
         </div>
 
@@ -178,7 +187,7 @@
           <div class="card-meta">Periodismo · 2008 – 2010</div>
           <h3 class="item-title">Responsable área digital — AGARESO</h3>
           <p>
-            Responsable del área digital en <strong>AGARESO</strong>
+            Responsable, como voluntario, del área digital en <strong>AGARESO</strong>
             (Asociación Galega de Reporteiros Solidarios).
           </p>
         </div>
@@ -201,6 +210,7 @@
             <a href="https://www.farodevigo.es" target="_blank" rel="noopener">Faro de Vigo</a>,
             decano de la prensa española. Periodismo especializado en ciencia, tecnología,
             salud, medio ambiente y cultura; coordinador del suplemento <em>Faro de Verano</em>.
+            Miembro del jurado de los XXII Premios Xerais de Novela (Editorial Xerais, 2005).
           </p>
         </div>
 
@@ -215,11 +225,12 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">Periodismo freelance · 2013 – 2022</div>
+          <div class="card-meta">Periodismo freelance · 2011 – 2025</div>
           <h3 class="item-title">Colaborador — medios independientes</h3>
           <p>
-            Artículos y reportajes en <em>El Salto</em>, <em>CTXT</em>, <em>Público</em>,
-            <em>Luzes</em>, <em>Galicia Confidencial</em> y <em>Disfrutar Vigo</em>, entre otros.
+            Artículos y reportajes en <em>Galicia Confidencial</em> (desde 2011), <em>GCDiario</em>,
+            <em>Xornal de Vigo</em> y <em>Disfrutar Vigo</em> y, de 2020 a 2025, en <em>El Salto</em>,
+            <em>CTXT</em>, <em>Público</em> y <em>Luzes</em>, entre otros.
           </p>
         </div>
 
@@ -269,6 +280,9 @@
         <span class="tag">Wikipedia</span>
         <span class="tag">Ciencia abierta</span>
         <span class="tag">Libertad de expresión</span>
+        <span class="tag">Soberanía digital</span>
+        <span class="tag">Bien común</span>
+        <span class="tag">Software libre</span>
       </div>
     </section>
 
@@ -285,7 +299,7 @@
         <h3 class="item-title"><a href="https://ia.xornalismo.gal" target="_blank" rel="noopener">GallaecIA Media HackLab</a></h3>
         <p>
           Laboratorio educativo de la asignatura <a href="docencia.html"><strong>Periodismo Automatizado Inteligente: Teoría, Técnica y Aplicaciones</strong></a>
-          (4.º curso, 6 ECTS, Grado en Periodismo · Dobre Grao, USC). El alumnado diseña, construye
+          (4.º curso, 6 ECTS, Grado en Periodismo · Doble Grado, USC). El alumnado diseña, construye
           y publica proyectos periodísticos originales con inteligencia artificial generativa:
           desde sistemas RAG y chatbots informativos hasta newsletters automatizadas,
           podcasts de síntesis de voz y aplicaciones experimentales de IA en la redacción.
@@ -396,13 +410,61 @@
           </p>
         </div>
 
+        <div class="card">
+          <div class="card-meta">Cultura hacker · 2022</div>
+          <h3 class="item-title"><a href="https://www.2600.com" target="_blank" rel="noopener">2600Madrid</a></h3>
+          <p>
+            Impulsor de las reuniones <strong>2600Madrid</strong>, auspiciadas por la revista <em>2600: The Hacker Quarterly</em>:
+            encuentros en espacios públicos, el primer viernes de cada mes, para intercambiar ideas entre personas curiosas
+            y expertas en cultura hacker.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Tecnología y ciudadanía · 2025 – presente</div>
+          <h3 class="item-title"><a href="https://cibervoluntarios.org" target="_blank" rel="noopener">Fundación Cibervoluntarios</a></h3>
+          <p>
+            Colaboro con la <strong>Fundación Cibervoluntarios</strong>, que impulsa la innovación con impacto social
+            y la soberanía digital ciudadana. En octubre de 2025 impartí la masterclass del Día Mundial del Cifrado,
+            emitida por la fundación junto a la Global Encryption Coalition; en octubre de 2026 fui ponente invitado en
+            <strong>EmpoderaLIVE</strong> (Málaga, 06/10/2026) y la fundación me entrevistó en <em>RetoHacker</em>, su programa
+            para inspirar vocaciones en ciberseguridad, impulsado junto a Kyndryl Foundation.
+            Más en <a href="divulgacion.html">Divulgación</a>.
+          </p>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/JKPQ0AHyTMI"
+              title="Alberto Quian: conecta periodismo, cultura hacker y participación ciudadana — RetoHacker, Fundación Cibervoluntarios"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Soberanía digital · Declaración Colectiva</div>
+          <h3 class="item-title"><a href="https://empodera.org" target="_blank" rel="noopener">Alianza por la Soberanía Digital Ciudadana</a></h3>
+          <p>
+            Firmante de la <strong>Declaración Colectiva por la Soberanía Digital Ciudadana</strong>, impulsada por la
+            Fundación Cibervoluntarios, que reivindica un ecosistema digital descentralizado, inclusivo y ético,
+            centrado en las necesidades de las personas y en la mejora de sus oportunidades. La declaración, fruto de un
+            proceso de cocreación en el que han participado más de quinientas personas (según la propia fundación, octubre de 2026),
+            recoge diez puntos clave para afrontar los retos de la era digital.
+          </p>
+          <p style="margin-top:0.6rem;">
+            → <a href="https://empodera.org/es/Soberania-Digital-Ciudadana-Fundacion-Cibervoluntarios.pdf" target="_blank" rel="noopener">Declaración Colectiva (PDF)</a>
+            · <a href="https://empodera.org" target="_blank" rel="noopener">empodera.org</a>
+          </p>
+        </div>
+
       </div>
     </section>
 
     <!-- Contacto -->
     <section class="page-section">
       <h2 class="section-title">Contacto</h2>
-      <div class="contact-grid" style="grid-template-columns: repeat(5, 1fr);">
+      <div class="contact-grid contact-grid-4">
         <div class="contact-item">
           <div class="label">Email institucional</div>
           <a href="mailto:alberto.quian@usc.es">alberto.quian@usc.es</a>
@@ -434,6 +496,14 @@
         <div class="contact-item">
           <div class="label">LinkedIn</div>
           <a href="https://www.linkedin.com/in/albertoquian/" target="_blank" rel="noopener">Ver perfil</a>
+        </div>
+        <div class="contact-item">
+          <div class="label">GitHub</div>
+          <a href="https://github.com/AlbertoQuian" target="_blank" rel="noopener">AlbertoQuian</a>
+        </div>
+        <div class="contact-item">
+          <div class="label">Zenodo</div>
+          <a href="https://zenodo.org/search?q=creators.orcid%3A%220000-0002-8593-7999%22" target="_blank" rel="noopener">Ver registros</a>
         </div>
         <div class="contact-item">
           <div class="label">Mastodon</div>

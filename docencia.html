@@ -9,12 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
 
-  <aside class="sidebar">
-    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4" alt="Alberto Quian" />
+  <aside class="sidebar" id="sidebar">
+    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4&s=256" alt="Alberto Quian" />
     <div class="sidebar-name">Alberto Quian</div>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">☰</button>
     <div class="sidebar-title">Doctor en Investigación<br>en Medios de Comunicación<br>Profesor de Periodismo<br>Cultura y ética hacker</div>
     <div class="sidebar-institution">Universidade de <br>Santiago de Compostela<br></div>
     <hr class="sidebar-divider" />
@@ -55,7 +57,7 @@
       <div class="card-list">
 
         <div class="card">
-          <div class="card-meta">3º / 4º curso · 2º semestre · Optativa · Mención en Investigación y Narrativas Periodísticas</div>
+          <div class="card-meta">3º / 4º curso · 2º semestre · Optativa · Mención en Investigación y Narrativas Periodísticas · 2023/24 – presente <strong>· Coordinador docente</strong></div>
           <h3 class="item-title">Comunicación Interactiva</h3>
           <p>
             Estudio de las formas de comunicación interactiva en el entorno digital: plataformas, audiencias participativas,
@@ -64,7 +66,7 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">4º / 5º curso · 2º semestre · Optativa · Mención en Visualización de la Información</div>
+          <div class="card-meta">4º / 5º curso · 2º semestre · Optativa · Mención en Visualización de la Información · 2024/25 – presente</div>
           <h3 class="item-title">Marketing periodístico</h3>
           <p>
             Aplicación de estrategias de marketing al periodismo digital. Modelos de negocio en medios,
@@ -74,7 +76,7 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">4º / 5º curso · 2º semestre · Optativa · Mención en Visualización de la Información</div>
+          <div class="card-meta">4º / 5º curso · 2º semestre · Optativa · Mención en Visualización de la Información · 2024/25 – presente <strong>· Coordinador docente (puesta en marcha)</strong></div>
           <h3 class="item-title">Periodismo Automatizado Inteligente: Teoría, Técnica y Aplicaciones</h3>
           <p>
             Fundamentos teóricos y prácticos del periodismo computacional y la automatización periodística.
@@ -179,7 +181,7 @@
       <div class="card-list">
 
         <div class="card">
-          <div class="card-meta">Optativa · Complementos de Formación</div>
+          <div class="card-meta">Optativa · Complementos de Formación · 2025/26</div>
           <h3 class="item-title">Introducción a la comunicación periodística digital</h3>
           <p>
             Análisis del ecosistema de comunicación periodística digital: cibermedios, plataformas,
@@ -188,7 +190,7 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">Optativa · 3 ECTS · 2022/23 – presente <strong>· Coordinador docente</strong></div>
+          <div class="card-meta">Optativa · 3 ECTS · 2023/24 – presente <strong>· Coordinador docente</strong></div>
           <h3 class="item-title">Nuevos escenarios informativos</h3>
           <p>
             Análisis de los nuevos contextos y entornos en los que se produce y consume información periodística.
@@ -197,11 +199,20 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">Optativa · 3 ECTS · 2022/23 – presente</div>
+          <div class="card-meta">Optativa · 3 ECTS · 2024/25 – presente</div>
           <h3 class="item-title">Periodismo en cambio: adaptación al escenario digital</h3>
           <p>
             Estudio del proceso de transformación del periodismo ante la digitalización: retos organizativos,
             cambios en las rutinas profesionales, nuevas competencias y estrategias de adaptación de los medios.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Optativa · 2022/23 – 2023/24</div>
+          <h3 class="item-title">Periodismo e innovación: adaptación del periodismo al escenario actual</h3>
+          <p>
+            Estudio de la innovación en el periodismo: nuevos modelos, formatos y rutinas profesionales
+            ante el escenario digital actual.
           </p>
         </div>
 
@@ -293,7 +304,7 @@
         </div>
 
         <div class="card">
-          <div class="card-meta">5º Doble Grado Periodismo-CA · 5º Doble Grado Periodismo-Humanidades · Obligatoria · 6 ECTS · 2019–2021</div>
+          <div class="card-meta">4º Grado en Periodismo · 5º Doble Grado Periodismo-CA · 5º Doble Grado Periodismo-Humanidades · Obligatoria · 6 ECTS · 2018–2021</div>
           <h3 class="item-title">Periodismo Científico y Medioambiental</h3>
           <p>
             Cobertura del cambio climático, biodiversidad y políticas medioambientales;
@@ -358,6 +369,33 @@
       </div>
     </section>
 
+    <!-- Innovación docente -->
+    <section class="page-section">
+      <h2 class="section-title">Innovación docente</h2>
+      <div class="card-list">
+
+        <div class="card">
+          <div class="card-meta">Proyecto de aprendizaje-servicio · USC · concedido para el curso 2026/27 · Coordinador</div>
+          <h3 class="item-title">InfoHackers: Comunicación Digital y Tecnologías para el Bien Común</h3>
+          <p>
+            Proyecto de aprendizaje-servicio (ApS) concedido en la convocatoria de la USC de 2026, que vincula al alumnado de
+            Periodismo con entidades sociales, como <a href="https://galicia.isf.es" target="_blank" rel="noopener">Enxeñería Sen Fronteiras Galicia</a>,
+            para aplicar la comunicación digital y las tecnologías al servicio del bien común.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Grupos de innovación docente · USC</div>
+          <h3 class="item-title">IDESVIR e IACODI</h3>
+          <p>
+            Miembro del grupo <strong>IDESVIR</strong> (Grupo de Innovación Docente en Espazos Virtuais), desde 2023, y del grupo
+            <strong>IACODI</strong> (Innovación para a Aprendizaxe da Comunicación Dixital), desde 2025.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
     <!-- TFG/TFM -->
     <section class="page-section">
       <h2 class="section-title">Dirección y tutorización de TFG/TFM</h2>
@@ -367,14 +405,14 @@
           <div class="card-meta">USC · 2023–presente</div>
           <h3 class="item-title">Universidade de Santiago de Compostela</h3>
           <p>
-            <strong>8 TFG dirigidos</strong> y <strong>2 TFM dirigidos</strong>
-            (Grado en Periodismo y Máster en Periodismo y Comunicación Multimedia).
-            Miembro de <strong>12 tribunales de TFG</strong> y <strong>10 de TFM</strong>.
+            <strong>13 TFG dirigidos</strong> (14 estudiantes, uno en cotutela) y <strong>3 TFM dirigidos</strong>
+            (4 estudiantes) en el Grado en Periodismo y el Máster en Periodismo y Comunicación Multimedia,
+            hasta el curso 2025/26. Miembro de tribunales de TFG y TFM.
           </p>
           <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-muted);">
             → Un TFG dirigido derivó en artículo publicado:
             García Fernández, R.J. &amp; Quian, A. «El impacto de las aplicaciones estadísticas
-            en el periodismo deportivo». <em>Estudios sobre el Mensaje Periodístico</em>, 32(1), 2026.
+            en el periodismo deportivo». <em>Estudios sobre el Mensaje Periodístico</em>, 32(2), 453–475, 2026.
           </p>
         </div>
 
@@ -382,8 +420,8 @@
           <div class="card-meta">UC3M · 2017–2023</div>
           <h3 class="item-title">Universidad Carlos III de Madrid</h3>
           <p>
-            <strong>13 TFG tutorizados</strong> (Grado en Periodismo y Doble Grado Periodismo-CA).
-            Miembro de <strong>24 tribunales de TFG</strong> y
+            <strong>12 TFG tutorizados</strong> (Grado en Periodismo).
+            Miembro de <strong>25 tribunales de TFG</strong> y
             <strong>2 tribunales de TFM</strong> del Máster en Investigación Aplicada a Medios.
           </p>
         </div>
@@ -392,7 +430,7 @@
 
       <div class="intro-block" style="margin-top:1.5rem;">
         <p>
-          <strong>Total acumulado:</strong> 21 TFG y 2 TFM dirigidos/tutorizados · 36 tribunales TFG · 12 tribunales TFM.
+          <strong>Total acumulado:</strong> 25 TFG y 3 TFM dirigidos/tutorizados · 48 tribunales de TFG y TFM (USC y UC3M).
         </p>
         <p style="margin-top:0.6rem;">
           Líneas preferentes: periodismo digital, IA y periodismo automatizado, cultura hacker,

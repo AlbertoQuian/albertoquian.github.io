@@ -6,20 +6,24 @@ Sitio web personal de Alberto Quian — PhD en Investigación en Medios de Comun
 
 ```
 .
-├── index.html          # Página principal (bio, afiliación, contacto)
-├── investigacion.html  # Líneas y proyectos de investigación
-├── publicaciones.html  # Libros, artículos y capítulos
-├── docencia.html       # Actividad docente
+├── index.html          # Página principal (bio, trayectoria, compromiso y colaboración, contacto)
+├── investigacion.html  # Líneas, proyectos y software abierto
+├── publicaciones.html  # Libros, capítulos, artículos y comunicaciones en congresos
+├── docencia.html       # Actividad docente, tesis dirigidas e innovación docente
+├── divulgacion.html    # Conferencias, charlas, vídeos y presencia en medios
+├── sitemap.xml
+├── robots.txt
 └── assets/
-    └── css/
-        └── style.css   # Estilos del sitio
+    ├── css/style.css   # Estilos del sitio (incluye la versión móvil, ≤768 px)
+    ├── js/nav.js       # Menú ☰ de la barra compacta en móvil
+    └── img/            # Imágenes (og.png, expo_esf.jpg)
 ```
 
 ## Tecnología
 
-Sitio estático HTML/CSS con diseño responsivo. Alojado en GitHub Pages.
+Sitio estático HTML/CSS con diseño responsivo y un script mínimo para el menú móvil. Alojado en GitHub Pages. La barra lateral está duplicada en las cinco páginas: si se cambia, hay que cambiarla en todas.
 
 ## Notas
 
-- Para publicar vía GitHub Pages, el repositorio debe ser público (o privado con GitHub Pro).
-- Para añadir una foto de perfil, sustituye el placeholder `.sidebar-avatar-placeholder` por una etiqueta `<img>` con la ruta a la imagen.
+- Los vídeos se incrustan con el patrón `.video-embed` (16:9) y `loading="lazy"`.
+- La foto de perfil se carga desde el avatar de GitHub (`avatars.githubusercontent.com`).

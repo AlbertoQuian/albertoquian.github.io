@@ -9,12 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
 
-  <aside class="sidebar">
-    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4" alt="Alberto Quian" />
+  <aside class="sidebar" id="sidebar">
+    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4&s=256" alt="Alberto Quian" />
     <div class="sidebar-name">Alberto Quian</div>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">☰</button>
     <div class="sidebar-title">Doctor en Investigación<br>en Medios de Comunicación<br>Profesor de Periodismo<br>Cultura y ética hacker</div>
     <div class="sidebar-institution">Universidade de <br>Santiago de Compostela<br></div>
     <hr class="sidebar-divider" />
@@ -51,6 +53,60 @@
       <h2 class="section-title">Conferencias y charlas seleccionadas</h2>
       <div class="card-list">
 
+        <div class="card" id="empoderalive">
+          <div class="card-meta">Ponente · EmpoderaLIVE 2026 · Fundación Cibervoluntarios · Málaga · 06/10/2026</div>
+          <h3 class="item-title">Recuperando espacios de conversación digital: de la desinformación a la soberanía informativa</h3>
+          <p>
+            Ponencia en <strong>EmpoderaLIVE 2026</strong>, el encuentro internacional sobre ciudadanía y tecnología de la
+            <strong><a href="https://cibervoluntarios.org" target="_blank" rel="noopener">Fundación Cibervoluntarios</a></strong>
+            y la <strong><a href="https://empodera.org" target="_blank" rel="noopener">Alianza por la Soberanía Digital Ciudadana</a></strong>,
+            compartida con Sergio D’Antonio Maceiras. Se puede ver en el directo del evento y, además, la Fundación
+            Cibervoluntarios publicó una entrevista en su programa RetoHacker.
+          </p>
+          <p class="card-meta" style="margin:0.8rem 0 0.4rem;">Mi ponencia, en el directo del evento (6/10/2026)</p>
+          <div class="video-embed">
+            <iframe loading="lazy"
+              src="https://www.youtube.com/embed/XTCMTJigDMI?start=27838"
+              title="EmpoderaLIVE 2026, directo del 6/10 — ponencia de Alberto Quian (desde 7 h 44 min)"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="card-meta" style="margin:0.8rem 0 0.4rem;">Entrevista de la Fundación Cibervoluntarios (RetoHacker)</p>
+          <div class="video-embed">
+            <iframe loading="lazy"
+              src="https://www.youtube.com/embed/JKPQ0AHyTMI"
+              title="Alberto Quian: conecta periodismo, cultura hacker y participación ciudadana — Fundación Cibervoluntarios"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="tags" style="margin-top:0.8rem;">
+            <span class="tag">Soberanía digital</span>
+            <span class="tag">Desinformación</span>
+            <span class="tag">Cibervoluntarios</span>
+            <span class="tag">EmpoderaLIVE</span>
+          </div>
+        </div>
+
+        <div class="card" id="feed2025">
+          <div class="card-meta">Mesa redonda · FEED 2025, Foro de Deseño · Cidade da Cultura, Santiago de Compostela · 07/11/2025</div>
+          <h3 class="item-title">Crear nos tempos da IA, pactos de convivencia</h3>
+          <p>
+            Mesa redonda del programa oficial del <strong>FEED 2025</strong> (VIII edición del Foro de Deseño, organizado por la
+            <strong>Asociación Galega de Deseño (DAG)</strong> con el patrocinio de la Xunta de Galicia), junto a la ilustradora
+            Chus Rojo, Stef Silva (Invisible) y el diseñador Carlos Lorenzo. Debate sobre la creación en tiempos de la
+            inteligencia artificial y sobre cómo pactar su convivencia con el trabajo creativo.
+            <a href="https://www.xunta.gal/notas-de-prensa/-/nova/018561/xunta-reafirma-seu-apoio-deseno-como-sector-estratexico-apertura-foro-feed-2025" target="_blank" rel="noopener">→ Nota de prensa de la Xunta</a>
+          </p>
+          <div class="tags" style="margin-top:0.6rem;">
+            <span class="tag">Inteligencia Artificial</span>
+            <span class="tag">Diseño</span>
+            <span class="tag">Creatividad</span>
+            <span class="tag">DAG</span>
+          </div>
+        </div>
+
         <div class="card">
           <div class="card-meta">Masterclass · Global Encryption Day 2025 · 21/10/2025</div>
           <h3 class="item-title">El cifrado en tiempos inciertos: el cifrado nos protege</h3>
@@ -62,7 +118,7 @@
             Como experto en cultura hacker, ética de la información y periodismo digital.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/sHoLJgvLF9A"
               title="Masterclass: El cifrado en tiempos inciertos, el cifrado nos protege — Cibervoluntarios / Global Encryption Day 2025"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -87,7 +143,7 @@
             en el marco del número 248 de la <em>Revista Grial</em> — Comunicación e novas tecnoloxías.
           </p>
           <div class="video-embed" style="margin-top:0.8rem;">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/_6GwsRuGdM8?start=11248"
               title="Galicia: cara a unha nación dixitalmente soberana — Foros Grial, Fundación Penzol, Vigo, outubro 2025"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -100,6 +156,21 @@
             <span class="tag">Revista Grial</span>
             <span class="tag">Editorial Galaxia</span>
             <span class="tag">Foros Grial</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Formación para periodistas · Grupo Novos Medios (USC) y Colexio Profesional de Xornalistas de Galicia · 24/09/2025 · 3 h</div>
+          <h3 class="item-title">Intelixencia artificial para xornalistas: ferramentas útiles para aplicar no traballo diario</h3>
+          <p>
+            Jornada formativa de tres horas para periodistas, impartida junto a Rubén Rivas de Roca, organizada por el grupo de
+            investigación <a href="https://novosmedios.gal" target="_blank" rel="noopener"><strong>Novos Medios</strong></a> de la USC
+            con la colaboración del Colexio Profesional de Xornalistas de Galicia.
+          </p>
+          <div class="tags" style="margin-top:0.6rem;">
+            <span class="tag">Inteligencia Artificial</span>
+            <span class="tag">Periodismo</span>
+            <span class="tag">Formación profesional</span>
           </div>
         </div>
 
@@ -122,12 +193,30 @@
             <span class="tag">Vigo</span>
           </div>
           <div class="video-embed" style="margin-top:0.8rem;">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/TfFkUhrOiCM"
               title="Ética hacker e resistencia cidadá — Jornadas Mundo en Crise, Ágora-R ECOAR, Vigo, marzo 2025"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Actividad con alumnado de secundaria · Hackers Sen Fronteiras · Enxeñería Sen Fronteiras Galicia · 06/05/2025</div>
+          <h3 class="item-title"><a href="https://galicia.isf.es/blog/comando-hacker-de-xornalismo-etico/" target="_blank" rel="noopener">Comando Hacker de Periodismo Ético</a></h3>
+          <p>
+            Invitado como profesor de la USC y voluntario de <strong>Enxeñería Sen Fronteiras Galicia</strong> a la actividad
+            «Comando Hacker sobre ética en el periodismo» con el alumnado de 2º de ESO del IES San Rosendo (Mondoñedo), dentro del proyecto
+            «Hackers sen Fronteiras. Tecnoloxías para o ben común e os Dereitos Humanos no ensino secundario de Galicia, Fase 2»
+            (subvencionado por la Xunta de Galicia). Les enseñé principios y técnicas para hacer buenas entrevistas e investigaciones
+            y les alerté de problemas en el consumo de noticias, como las <em>fake news</em> y el <em>clickbait</em>.
+          </p>
+          <div class="tags" style="margin-top:0.6rem;">
+            <span class="tag">Ética periodística</span>
+            <span class="tag">Alfabetización mediática</span>
+            <span class="tag">ESF-Galicia</span>
+            <span class="tag">Secundaria</span>
           </div>
         </div>
 
@@ -158,7 +247,7 @@
             descentralizadas publicado en el número 135 de la revista <em>Luzes</em>.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/5PtxDyxYEC0"
               title="O Fediverso contra Goliat — Fundación Luzes / Revisar os marcos, A Coruña, enero 2025"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -182,7 +271,7 @@
             y Xavier Ribes Guàrdia (UAB).
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/zwee6SiI7B8"
               title="IA For Good: herramientas para apoyar la democracia — Congreso Internacional de la Radio 2024"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -198,6 +287,21 @@
         </div>
 
         <div class="card">
+          <div class="card-meta">Conferencia en línea · Grupo Novos Medios (USC) y Colexio Profesional de Xornalistas de Galicia · 27/09/2024</div>
+          <h3 class="item-title">Oportunidades, retos e riscos da intelixencia artificial xenerativa</h3>
+          <p>
+            Conferencia en línea para periodistas dentro de una jornada formativa organizada por el grupo
+            <a href="https://novosmedios.gal" target="_blank" rel="noopener"><strong>Novos Medios</strong></a> de la USC
+            con la colaboración del Colexio Profesional de Xornalistas de Galicia.
+          </p>
+          <div class="tags" style="margin-top:0.6rem;">
+            <span class="tag">IA generativa</span>
+            <span class="tag">Periodismo</span>
+            <span class="tag">Formación profesional</span>
+          </div>
+        </div>
+
+        <div class="card">
           <div class="card-meta">Ponente · Workshop RTVE Instituto · Barcelona · 13/06/2024</div>
           <h3 class="item-title">IA en medios: ¿amenaza? ¿oportunidad? ¿una transformación forzosa o necesaria?</h3>
           <p>
@@ -206,7 +310,7 @@
             Xavier Mitjana, moderada por Carmen Pérez Cernuda (RTVE). Diploma de participación reconocido.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/bYuGjPHUhRc"
               title="IA en medios — Workshop RTVE Instituto, Barcelona, junio 2024"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -224,12 +328,12 @@
           <div class="card-meta">Webinar · Cloud Seguro · 06/08/2024</div>
           <h3 class="item-title">Webinar «Civilización Hacker»</h3>
           <p>
-            Webinar organizado por <strong><a href="https://www.youtube.com/@dircloudseguro" target="_blank" rel="noopener">Cloud Seguro</a></strong>
+            Webinar organizado por <strong><a href="https://www.youtube.com/@CloudSeguro" target="_blank" rel="noopener">Cloud Seguro</a></strong>
             en torno al libro <em>Civilización Hacker</em> (Anaya Multimedia, 2022). Presentación y debate
             sobre la historia, ética y cultura hacker como movimiento de empoderamiento social en la era digital.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/sNsbCPdZsMY"
               title="Webinar Civilización Hacker — Cloud Seguro"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -244,6 +348,30 @@
         </div>
 
         <div class="card">
+          <div class="card-meta">Panel invitado · Workshop internacional en línea · Univ. Fernando Pessoa, Luterana do Brasil, USC y Vigo · 20/10/2023</div>
+          <h3 class="item-title">Desinformação e Inteligência Artificial: panel «Perigos»</h3>
+          <p>
+            Intervención por invitación en el panel «Perigos», sobre regulación y verificación, del workshop internacional en línea
+            «Desinformação e Inteligência Artificial», organizado por las universidades Fernando Pessoa, Luterana do Brasil,
+            Santiago de Compostela y Vigo.
+          </p>
+          <div class="video-embed">
+            <iframe loading="lazy"
+              src="https://www.youtube.com/embed/ZZ_d7781H-0"
+              title="Desinformação e Inteligência Artificial: Perigos — workshop internacional, UFP LabRadio"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="tags" style="margin-top:0.8rem;">
+            <span class="tag">Desinformación</span>
+            <span class="tag">Inteligencia Artificial</span>
+            <span class="tag">Regulación</span>
+            <span class="tag">Verificación</span>
+          </div>
+        </div>
+
+        <div class="card">
           <div class="card-meta">Charla · NerdNite Santiago · USC · 26/04/2023</div>
           <h3 class="item-title">Hackear non é cousa de delincuentes</h3>
           <p>
@@ -252,7 +380,7 @@
             dimensión ética y creativa, y su papel en la defensa de los derechos digitales.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://odysee.com/$/embed/etica-cultura-hacker-nerdnite-santiago-compostela:a"
               title="Ética hacker e cultura libre — NerdNite Santiago de Compostela"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -276,7 +404,7 @@
             (RICD, vol. 4, nº 17, 2022), recogida también en formato audiovisual.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://odysee.com/$/embed/periodismo-ciudadan%C3%ADa-estado-desinformacion:1"
               title="Periodismo, Ciudadanía y Estado — Desinformación"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -299,7 +427,7 @@
             Temporada 9 dedicada al hacktivismo. Episodio inaugural sobre ética, política y cultura hacker.
           </p>
           <div class="video-embed">
-            <iframe
+            <iframe loading="lazy"
               src="https://www.youtube.com/embed/aDXDcAWUmJ8"
               title="Cultura hacker — De ida y vuelta, UAM Radio, temporada 9 Hacktivismo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -311,6 +439,37 @@
             <span class="tag">Hacktivismo</span>
             <span class="tag">Radio</span>
             <span class="tag">México</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Jornada · A Sociedade en Rede · Centro Autonómico de Formación e Innovación (Xunta de Galicia) · Cidade da Cultura, Santiago de Compostela · 24/11/2012</div>
+          <h3 class="item-title">Integración dos medios sociais na educación. Ferramentas, usos e estratexias para profesores e alumnos</h3>
+          <p>
+            Ponencia de una hora, en gallego, ante cerca de 150 docentes del sistema educativo gallego, en las xornadas
+            «A Sociedade en Rede» (12 horas). Propuse formas de uso colaborativo y participativo de los medios sociales entre
+            profesorado y alumnado, y la importancia de la alfabetización digital para el pensamiento crítico y la verificación de información.
+          </p>
+          <div class="tags" style="margin-top:0.6rem;">
+            <span class="tag">Medios sociales</span>
+            <span class="tag">Educación</span>
+            <span class="tag">Alfabetización digital</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Conferencia · Universidade de Vigo · Casa das Campás, Pontevedra · 28/03/2011</div>
+          <h3 class="item-title">Redes sociales y comunicación</h3>
+          <p>
+            Participación, como experto en periodismo digital, en el ciclo
+            <a href="https://tv.uvigo.es/series/5b5b4cf18f4208f15668fb7e" target="_blank" rel="noopener"><strong>«De promesa a realidad. La comunicación “Made in Galicia”»</strong></a>
+            de la Universidade de Vigo, abierto al público. Retos y herramientas de las redes sociales para periodistas y medios, con casos
+            prácticos de comunicación en línea: el Plan Xacobeo 2010, AGARESO y <em>Galicia Confidencial</em>.
+          </p>
+          <div class="tags" style="margin-top:0.6rem;">
+            <span class="tag">Redes sociales</span>
+            <span class="tag">Periodismo digital</span>
+            <span class="tag">Universidade de Vigo</span>
           </div>
         </div>
 
@@ -363,14 +522,8 @@
           <span class="pub-venue">
             Invitado, junto al abogado Javier de la Cueva, al programa <em>Cine a contracorriente</em> de <strong>HispanTV</strong>,
             dedicado al filme <em>«El quinto poder»</em> y los orígenes de WikiLeaks.
-            <a href="https://www.dailymotion.com/video/x1hz4o8" target="_blank" rel="noopener">→ Ver en DailyMotion</a>
+            (El vídeo original, alojado en Dailymotion, ya no está disponible.)
           </span>
-          <div id="dm-x1hz4o8" onclick="loadDM(this)" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:0.8rem;cursor:pointer;background:#111;">
-            <img src="https://www.dailymotion.com/thumbnail/video/x1hz4o8" alt="Ver vídeo" style="width:100%;height:100%;position:absolute;top:0;left:0;object-fit:cover;opacity:0.75;" />
-            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,120,0,0.88);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><polygon points="8,5 19,12 8,19"/></svg>
-            </div>
-          </div>
           <div class="tags" style="margin-top:0.8rem;">
             <span class="tag">WikiLeaks</span>
             <span class="tag">HispanTV</span>
@@ -415,7 +568,7 @@
 
           <div class="social-grid">
             <div class="social-embed-wrap">
-              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7449912933771513856"
+              <iframe loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7449912933771513856"
                       frameborder="0" allowfullscreen
                       title="Post en LinkedIn — Exposición Coñeces o teu móbil?, ESF-Galicia / USC"></iframe>
             </div>
@@ -428,7 +581,7 @@
               </blockquote>
             </div>
             <div class="social-embed-wrap">
-              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacomusc%2Fposts%2Fpfbid02nAwVAH13EAv6wkC2fLqqAjqu93jjL4G7LE2kyWcgb8rhJj6SmzKsxpMyJh3ZKStMl&amp;show_text=true&amp;width=500"
+              <iframe loading="lazy" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacomusc%2Fposts%2Fpfbid02nAwVAH13EAv6wkC2fLqqAjqu93jjL4G7LE2kyWcgb8rhJj6SmzKsxpMyJh3ZKStMl&amp;show_text=true&amp;width=500"
                       style="border:none;overflow:hidden;"
                       scrolling="no" frameborder="0" allowfullscreen
                       allow="autoplay;clipboard-write;encrypted-media;picture-in-picture;web-share"></iframe>
@@ -459,12 +612,5 @@
 
   </main>
 
-<script>
-function loadDM(el) {
-  var id = el.id.replace('dm-', '');
-  el.onclick = null;
-  el.innerHTML = '<iframe src="https://geo.dailymotion.com/player.html?video=' + id + '&autoplay=1" style="width:100%;height:100%;position:absolute;left:0;top:0;border:none;" allow="autoplay;fullscreen;web-share" allowfullscreen></iframe>';
-}
-</script>
 </body>
 </html>

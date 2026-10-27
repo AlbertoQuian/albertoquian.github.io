@@ -9,12 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
 </head>
 <body>
 
-  <aside class="sidebar">
-    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4" alt="Alberto Quian" />
+  <aside class="sidebar" id="sidebar">
+    <img class="sidebar-avatar" src="https://avatars.githubusercontent.com/u/128751500?v=4&s=256" alt="Alberto Quian" />
     <div class="sidebar-name">Alberto Quian</div>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">☰</button>
     <div class="sidebar-title">Doctor en Investigación<br>en Medios de Comunicación<br>Profesor de Periodismo<br>Cultura y ética hacker</div>
     <div class="sidebar-institution">Universidade de <br>Santiago de Compostela<br></div>
     <hr class="sidebar-divider" />
@@ -141,6 +143,19 @@
       <div class="card-list">
 
         <div class="card">
+          <div class="card-meta">2026 – 2028 · Proyecto nacional · Prueba de concepto · Miembro del equipo</div>
+          <h3 class="item-title"><a href="https://psmresearchteam.com/xornalia/" target="_blank" rel="noopener">XornalIA — Desarrollo, validación y transferencia de una plataforma integradora de soluciones de inteligencia artificial generativa especializada para medios de comunicación</a></h3>
+          <p>Proyecto de prueba de concepto del Programa Estatal de Transferencia y Colaboración (Plan Estatal de Investigación Científica, Técnica y de Innovación 2024–2027), financiado por el Ministerio de Ciencia, Innovación y Universidades (AEI) (Ref. <strong>PDC2025-166024-I00</strong>). Propone una plataforma modular de IA generativa adaptada a los flujos de trabajo periodísticos de redacciones pequeñas y medianas (documentación, edición, verificación y adaptación de contenidos). Participo en el diseño y la prueba de prototipos; un primer resultado es el <a href="#software">Auditor de Contratos Públicos</a>, software libre surgido de un TFG que dirigí.</p>
+          <div class="tags">
+            <span class="tag">IA generativa</span>
+            <span class="tag">Redacciones</span>
+            <span class="tag">Transferencia</span>
+            <span class="tag">MICIU/AEI</span>
+            <span class="tag">USC</span>
+          </div>
+        </div>
+
+        <div class="card">
           <div class="card-meta">2025 – 2029 · Proyecto nacional · Miembro del equipo</div>
           <h3 class="item-title"><a href="https://novosmedios.gal/nextdigimedia/" target="_blank" rel="noopener">NEXTDIGIMEDIA — Inteligencia artificial en medios digitales en España: efectos y roles</a></h3>
           <p>Proyecto de Generación de Conocimiento financiado por <strong>MICIU/AEI/10.13039/501100011033</strong> y <strong>FEDER/UE</strong> (Ref. <strong>PID2024-156034OB-C22</strong>). Plan Estatal de Investigación Científica e Técnica e de Innovación 2024–2027. Subproyecto 2 de la USC del proyecto coordinado <em>Inteligencia artificial en medios digitales en España: modelos y escenarios</em> (subproyecto 1: Universidad de Navarra). Grupo <a href="https://novosmedios.gal" target="_blank" rel="noopener">Novos Medios</a> / <a href="http://infotendencias.com/" target="_blank" rel="noopener">Infotendencias</a>, USC.</p>
@@ -167,6 +182,12 @@
         </div>
 
         <div class="card">
+          <div class="card-meta">2021 – 2023 · Proyecto nacional · Prueba de concepto · Colaborador externo</div>
+          <h3 class="item-title"><a href="https://debatrue.com" target="_blank" rel="noopener">DEBATrue — Lucha contra la desinformación y criterios de valor en los debates electorales en televisión y medios digitales: plataforma de verificación y blockchain</a></h3>
+          <p>Proyecto de prueba de concepto de la Universidade de Vigo (Ref. <strong>PDC2021-121720-I00</strong>), financiado por el Ministerio de Ciencia e Innovación (AEI) y la Unión Europea NextGenerationEU/PRTR, dirigido por José Rúas Araújo y Ana Belén Fernández Souto. Mi participación fue puntual y externa al equipo: sus investigadores principales me invitaron a escribir el capítulo <em>«¿Eres alternativo? Pues explora la Internet independiente»</em> (pp. 181–209) del manual <a href="https://debatrue.com/manual-contra-la-desinformacion/" target="_blank" rel="noopener">Contra la desinformación: manual de herramientas y recursos didácticos para el aula</a> (Fragua, 2023), dirigido a alumnado y profesorado de Secundaria y Bachillerato.</p>
+        </div>
+
+        <div class="card">
           <div class="card-meta">2019 – 2022 · Proyecto nacional</div>
           <h3 class="item-title">Racionalidad y contraconocimiento. Epistemología de la detección de falsedades en relatos informativos</h3>
           <p>Investigación sobre los mecanismos epistemológicos implicados en la detección de desinformación y la verificación de noticias en el ecosistema mediático digital.</p>
@@ -176,6 +197,54 @@
           <div class="card-meta">2014 – 2017 · Proyecto nacional</div>
           <h3 class="item-title">Big data, redes sociales y periodismo de datos: aplicación de las herramientas de monitorización al análisis de fuentes y contenidos periodísticos</h3>
           <p>Ministerio de Economía y Competitividad (Ref. CSO2013-47767-C2-1-R). Participación de las universidades Carlos III de Madrid, Pompeu Fabra, Málaga y La Laguna.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Software y recursos abiertos -->
+    <section class="page-section" id="software">
+      <h2 class="section-title">Software y recursos abiertos</h2>
+      <div class="card-list">
+
+        <div class="card">
+          <div class="card-meta">Software libre · GPL-3.0 · v2.0.1 · 2026</div>
+          <h3 class="item-title"><a href="https://github.com/AlbertoQuian/instagram-tiktok-scraper" target="_blank" rel="noopener">Instagram &amp; TikTok Scraper</a></h3>
+          <p>
+            Herramienta en Python (Playwright y yt-dlp) para recoger datos públicos de Instagram y TikTok con fines de investigación académica.
+            Publicada con licencia GPL-3.0 y DOI: <a href="https://doi.org/10.5281/zenodo.19960149" target="_blank" rel="noopener">10.5281/zenodo.19960149</a>.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Datos abiertos</span>
+            <span class="tag">GPL v3</span>
+            <span class="tag">Zenodo</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Software libre · MIT · v1.0.0 · 2026</div>
+          <h3 class="item-title"><a href="https://github.com/AlbertoQuian/auditor-contratos-publicos" target="_blank" rel="noopener">Auditor de Contratos Públicos</a></h3>
+          <p>
+            Herramienta <em>local-first</em> de periodismo de datos para auditar la contratación pública, desarrollada con Xoán Xosé Pardal Pérez
+            a partir de su trabajo de fin de grado, que dirigí, en el marco del proyecto XornalIA. Licencia MIT y DOI:
+            <a href="https://doi.org/10.5281/zenodo.21652747" target="_blank" rel="noopener">10.5281/zenodo.21652747</a>.
+          </p>
+          <div class="tags">
+            <span class="tag">Periodismo de datos</span>
+            <span class="tag">Contratación pública</span>
+            <span class="tag">MIT</span>
+            <span class="tag">Zenodo</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-meta">Plataforma docente abierta · GPL v3 · 2024 – presente</div>
+          <h3 class="item-title"><a href="https://ia.xornalismo.gal" target="_blank" rel="noopener">GallaecIA Media HackLab</a></h3>
+          <p>
+            Laboratorio educativo abierto donde el alumnado publica sus proyectos de IA aplicada al periodismo.
+            Código bajo licencia GPL v3 y contenidos CC BY-NC-SA 4.0. Más información en <a href="docencia.html">Docencia</a>.
+          </p>
         </div>
 
       </div>
@@ -191,7 +260,7 @@
           <p>Tendencias, Cibermedios, Impresos · Universidade de Santiago de Compostela. Investigación sobre la transformación digital de los medios de comunicación, los cibermedios y las nuevas tendencias en el ecosistema informativo.</p>
         </div>
         <div class="card">
-          <div class="card-meta">UC3M · 2016 – 2023 · Grupo anterior</div>
+          <div class="card-meta">UC3M · 2021 – 2023 · Grupo anterior</div>
           <h3 class="item-title">Analytics, Media and Public Engagement: UC3M MediaLab</h3>
           <p>Grupo <em>Analytics, Media and Public Engagement: Communication, Journalism and Technology Laboratory</em> de la <a href="https://www.uc3m.es" target="_blank" rel="noopener">Universidad Carlos III de Madrid</a>. Líneas de investigación en analítica de medios, engagement del público, periodismo y tecnología, big data aplicado a la comunicación y desinformación.</p>
         </div>
@@ -203,12 +272,12 @@
       <h2 class="section-title">Afiliaciones académicas anteriores</h2>
       <div class="card-list">
         <div class="card">
-          <div class="card-meta">UC3M · 2016 – 2023</div>
+          <div class="card-meta">UC3M · 2017 – 2023</div>
           <h3 class="item-title">Universidad Carlos III de Madrid</h3>
           <p>Docencia en Periodismo Científico. Departamento de Periodismo y Comunicación Audiovisual.</p>
         </div>
         <div class="card">
-          <div class="card-meta">UOC</div>
+          <div class="card-meta">UOC · 2018 – 2023</div>
           <h3 class="item-title">Universitat Oberta de Catalunya</h3>
           <p>Docencia en el Máster Universitario de Periodismo y Comunicación Digital: Datos y Nuevas Narrativas.</p>
         </div>
@@ -224,9 +293,9 @@
           <div class="card-meta">Roles editoriales</div>
           <h3 class="item-title">Editor asociado y revisor</h3>
           <p>
-            <strong>Editor asociado:</strong> <em>Frontiers in Communication</em> (desde 2024, sección <em>Media Governance and the Public Sphere</em>).<br />
+            <strong>Editor asociado</strong> (desde 2024): <em>Frontiers in Communication</em> y <em>Frontiers in Sociology</em> (esta, en la sección <em>Media Governance and the Public Sphere</em>).<br />
             <strong>Editor de sección:</strong> <em>RAE-IC — Revista de la Asociación Española de Investigación de la Comunicación</em>.<br />
-            <strong>Revisor (doble ciego):</strong> <em>First Monday</em>, <em>El Profesional de la Información</em>, <em>Frontiers in Communication</em>, <em>Doxa Comunicación</em>, <em>Cuadernos.info</em>, <em>RAE-IC</em>, <em>Revista Iberoamericana de Ciencia, Tecnología y Sociedad — CTS</em>.
+            <strong>Revisor (doble ciego):</strong> <em>Sage Open</em>, <em>First Monday</em>, <em>Journalism and Media</em>, <em>Frontiers in Communication</em>, <em>Frontiers in Sociology</em>, <em>Frontiers in Public Health</em>, <em>El Profesional de la Información</em>, <em>Doxa Comunicación</em>, <em>RAE-IC</em>, <em>Cuadernos.info</em>, <em>Revista Iberoamericana de Ciencia, Tecnología y Sociedad — CTS</em>, <em>Revista Española de Comunicación en Salud</em> y <em>Boletín de la Biblioteca de Menéndez Pelayo</em>.
           </p>
         </div>
       </div>
@@ -261,13 +330,18 @@
           <span class="pub-title">Acreditación Profesor Ayudante Doctor — ANECA</span><br />
           <span class="pub-venue">Agencia Nacional de Evaluación de la Calidad y Acreditación · 21/01/2022</span>
         </li>
+        <li>
+          <span class="pub-year">2021</span>
+          <span class="pub-title">Acreditación Profesor Contratado Doctor — ACSUG</span><br />
+          <span class="pub-venue">Axencia para a Calidade do Sistema Universitario de Galicia · 17/12/2021</span>
+        </li>
       </ul>
     </section>
 
     <!-- Perfiles académicos -->
     <section class="page-section">
       <h2 class="section-title">Perfiles académicos</h2>
-      <div class="contact-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="contact-grid contact-grid-3">
         <div class="contact-item">
           <div class="label">USC</div>
           <a href="https://www.usc.gal/es/departamento/ciencias-comunicacion/directorio/alberto-quian-pampin-736787" target="_blank" rel="noopener">Directorio USC</a>

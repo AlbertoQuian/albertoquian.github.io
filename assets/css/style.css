@@ -468,46 +468,106 @@ details[open] summary::before { content: '▼ '; }
 }
 
 /* ── MOBILE ── */
-.menu-toggle { display: none; }
+/* Elementos solo móvil / botón de menú: ocultos en escritorio */
+.menu-toggle,
+.mobile-profile,
+.mobile-only { display: none; }
+
+/* Rejillas de contacto con columnas fijas solo en escritorio */
+@media (min-width: 769px) {
+  .contact-grid-5 { grid-template-columns: repeat(5, 1fr); }
+  .contact-grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .contact-grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
 
 @media (max-width: 768px) {
   body { flex-direction: column; }
+
+  /* Barra compacta fija (≈56 px): avatar + nombre + botón ☰.
+     El resto de la cabecera (título, institución, navegación y redes)
+     solo se muestra al abrir el menú. */
   .sidebar {
     width: 100%; height: auto; position: sticky; top: 0;
     overflow: visible;
-    padding: 1.2rem 1rem;
+    padding: 0.5rem 1rem;
     flex-direction: row; flex-wrap: wrap;
-    align-items: center; justify-content: space-between;
+    align-items: center; justify-content: flex-start;
+    gap: 0.2rem 0.75rem;
     border-right: none;
     border-bottom: 1px solid var(--color-border);
   }
   .sidebar::after { width: 100%; position: absolute; }
+  .sidebar.open { max-height: 100vh; max-height: 100dvh; overflow-y: auto; }
   .sidebar-avatar,
-  .sidebar-avatar-placeholder { width: 48px; height: 48px; font-size: 1.1rem; margin: 0; }
-  .sidebar-name { font-size: 1.1rem; text-align: left; }
+  .sidebar-avatar-placeholder { width: 40px; height: 40px; font-size: 1rem; margin: 0; }
+  .sidebar-name { flex: 1; font-size: 1.15rem; text-align: left; margin: 0; }
+  .menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-accent);
+    font: inherit; font-family: var(--font-mono); font-size: 1.3rem; line-height: 1;
+    cursor: pointer;
+    position: relative; z-index: 102;
+  }
+  .menu-toggle:hover,
+  .menu-toggle:focus-visible {
+    border-color: var(--color-accent);
+    box-shadow: var(--glow-green);
+    outline: none;
+  }
+  .sidebar:not(.open) .sidebar-title,
+  .sidebar:not(.open) .sidebar-institution,
+  .sidebar:not(.open) .sidebar-divider,
+  .sidebar:not(.open) .sidebar-nav,
+  .sidebar:not(.open) .sidebar-social { display: none; }
   .sidebar-title {
     display: block;
     width: 100%;
-    font-size: 0.58rem;
+    font-size: 0.78rem;
     text-align: left;
-    margin-top: 0.25rem;
-    line-height: 1.5;
+    margin-top: 0.4rem;
+    line-height: 1.6;
   }
   .sidebar-institution {
     display: block;
     width: 100%;
-    font-size: 0.58rem;
+    font-size: 0.74rem;
     text-align: left;
-    margin-top: 0.1rem;
+    margin-top: 0.2rem;
   }
-  .sidebar-nav { width: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.7rem; }
-  .sidebar-nav a { font-size: 0.72rem; padding: 0.28rem 0.45rem; }
+  .sidebar-nav { width: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.4rem; }
+  .sidebar-nav a { font-size: 0.8rem; padding: 0.6rem 0.7rem; min-height: 44px; }
   .sidebar-divider { width: 100%; margin: 0.7rem 0; }
-  .sidebar-social { width: 100%; margin-top: 0.4rem; }
+  .sidebar-social { width: 100%; margin-top: 0.4rem; padding-bottom: 0.6rem; }
+  .sidebar-social a { font-size: 0.72rem; padding: 0.4rem 0.6rem; }
+
   .main { margin-left: 0; padding: 1.8rem 1.1rem; }
+
+  /* Presentación grande al inicio de la portada */
+  .mobile-profile { display: block; text-align: center; margin-bottom: 1.1rem; }
+  .mobile-profile-photo {
+    width: 144px; height: 144px;
+    object-fit: cover;
+    border: 2px solid var(--color-accent);
+    box-shadow: var(--glow-green);
+  }
+  .mobile-only {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.85rem; line-height: 1.7;
+    color: var(--color-accent2);
+    text-align: center;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 0 5px rgba(255,119,204,0.45);
+  }
+
+  .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .book-card { flex-direction: column; gap: 0.9rem; }
   .book-cover { width: 76px; }
   h1.page-title { font-size: 2rem; }
   h2.section-title { font-size: 1.25rem; }
   .social-grid { grid-template-columns: 1fr; }
+  .social-embed-wrap { height: 420px; }
 }
