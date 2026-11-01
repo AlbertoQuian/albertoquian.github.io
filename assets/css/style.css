@@ -467,6 +467,10 @@ details[open] summary::before { content: '▼ '; }
   display: block;
 }
 
+/* Publicación de Instagram completa (imagen + texto): la altura la ajusta assets/js/ig-embed.js */
+.social-embed-wrap.social-embed-auto { height: auto; }
+.social-embed-wrap.social-embed-auto iframe.ig-embed { height: 900px; }
+
 /* ── MOBILE ── */
 /* Elementos solo móvil / botón de menú: ocultos en escritorio */
 .menu-toggle,
